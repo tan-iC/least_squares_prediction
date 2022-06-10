@@ -20,14 +20,14 @@ $$R(k) = E[w(k)w(k)^T]$$
 
 1. 観測方程式 $$ \boldsymbol{z} = \boldsymbol{H}\boldsymbol{x} + \boldsymbol{w} $$
 
-1. 誤差共分散 $$ \boldsymbol{R} = {\bold diag}[R(0), R(1), ...]$$
+1. 誤差共分散 $$ \boldsymbol{R} = \mathbf{diag}[R(0), R(1), ...]$$
 
 1. 推定値 $$ \boldsymbol{\hat{x}} = [\boldsymbol{H}^{T}\boldsymbol{R}^{-1}\boldsymbol{H}]^{-1}\boldsymbol{H}^{T}\boldsymbol{R}^{-1}\boldsymbol{z} $$
 
 ## 逐次型
 
 - k番目の推定値をもとにk+1番目の推定値を求める
-- $\boldsymbol{\hat{x}}(0) = [0, 0, ..., 0]^T$ $\boldsymbol{P}(0) = {\bold diag}[10^a, 10^a, ..., 10^a]$と初期化する
+- $\boldsymbol{\hat{x}}(0) = [0, 0, ..., 0]^T$ $\boldsymbol{P}(0) = \mathbf{diag}[10^a, 10^a, ..., 10^a]$と初期化する
 
 1. 観測予測誤差共分散 $$\boldsymbol{S}(k+1) = \boldsymbol{H}(k+1)\boldsymbol{P}(k)\boldsymbol{H}^T(k+1)+\boldsymbol{R}(k+1)$$
 
